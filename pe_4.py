@@ -19,6 +19,8 @@ def get_max_palindrome():
 				c = b + k * 1100
 				for x in range(990, 98, -11):
 					if(c % x == 0):
+						y = c / x
+						if(y < 1000):
 							return c
 
 print(get_max_palindrome())
