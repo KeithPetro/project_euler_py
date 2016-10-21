@@ -23,6 +23,7 @@ def get_amicable_number_sum(limit):
 		j_sum = get_proper_divisor_sum(i_sum)
 		if((i == j_sum)):
 			if(i != i_sum):
+				#print('D(' + str(i) + ') = ' + str(i_sum) + ' and D(' + str(i_sum) + ') = ' + str(j_sum))
 				amicable_number_sum += i_sum + j_sum
 
 	return amicable_number_sum // 2 #to account for duplicates
