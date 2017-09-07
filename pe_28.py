@@ -5,10 +5,10 @@
 #spiral formed in the same way? (see site)
 
 #diff = 0|size = 1
-#		2|		 3
-#		4|       5
-#		6|       7
-#	  ...|     ...
+#       2|       3
+#       4|       5
+#       6|       7
+#     ...|     ...
 #As can be seen from this pattern, diff = size - 1
 #For each layer we go out, we add 4 new values, each diff apart
 
