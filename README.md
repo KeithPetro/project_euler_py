@@ -8,13 +8,21 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 ### _Solution(s)_:
 There are multiple approaches to solve this problem. I have implemented 3 such solutions in `pe_1.py`.
 
-Solution 1:
+_Solution 1_:
 
-Solution 2:
+This solution loops through the multiples of both 3 and 5 which are less than the limit, in this case 1000. It also loops through the multiples of 15 (3\*5) in order to subtract the common multiples of 3 and 5.
+
+_Solution 2_:
 
 This solution takes advantage of the formula for the sum of an arithmetic progression, S<sub>n</sub> = n(a<sub>1</sub> + a<sub>n</sub>)/2.
 
-Solution 3:
+The first step is to find the maximum multiples of 3, 5 and 15. Once this is done, we can calculate the solution using the above equation three times, adding the solutions for 3 and 5 and subtracting the solution for 15 to account for common multiples. n can be found by dividing the maximum multiple by the number it is a multiple of (eg. n for 3 will be 999/3 = 333 where 1000 is the limit).
+
+The complexity of this algorithm is O(1).
+
+_Solution 3_:
+
+This solution checks each number below the limit for divisibility with 3 or 5 and adds those which are divisible to the final sum.
 
 ---
 
