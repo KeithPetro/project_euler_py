@@ -1,6 +1,16 @@
 # project_euler_py
 This project will consist of python solutions to [Project Euler](https://projecteuler.net) questions. Particular emphasis will be put on the efficiency and optimization of the solutions. If you are at all interested in working on Project Euler questions, or have a general interest in algorithms, I suggest trying some Project Euler questions out yourself prior to reading anyone else's solutions.
 
+# Notes
+## Timing Analysis
+All timing analysis has been done using the `time` command in Debian 9 "Stretch". An example of running timing analysis would be:
+```
+time python pe_1.py
+```
+
+## Issues
+If you find anything in my code that you think is an incorrect working or a wholly inefficient one, I would be appreciative if you would submit an issue so that I can learn how to improve my code.
+
 ## Problem \#1 - Multiples of 3 and 5
 ### _Problem_:
 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.
