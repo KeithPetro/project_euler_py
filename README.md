@@ -90,3 +90,10 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 ### _Solution(s)_:
 _Solution 1_:
 
+## Problem \#3 - Largest Prime Factor
+
+## Problem \#4 - Largest Palindrome Product
+
+## Problem \#5 - Smallest Multiple
+
+## Problem \#6 - Sum Square Difference
