@@ -20,17 +20,62 @@ _Solution 1_:
 
 This solution loops through the multiples of both 3 and 5 which are less than the limit, in this case 1000. It also loops through the multiples of 15 (3\*5) in order to subtract the common multiples of 3 and 5.
 
+Timing Analysis:
+```
+real	0m0.020s
+user	0m0.016s
+sys	0m0.000s
+```
+
+Timing Analysis with limit set to 1,000,000:
+```
+real	0m0.104s
+user	0m0.100s
+sys	0m0.000s
+```
+
 _Solution 2_:
 
 This solution takes advantage of the formula for the sum of an arithmetic progression, S<sub>n</sub> = n(a<sub>1</sub> + a<sub>n</sub>)/2.
 
 The first step is to find the maximum multiples of 3, 5 and 15. Once this is done, we can calculate the solution using the above equation three times, adding the solutions for 3 and 5 and subtracting the solution for 15 to account for common multiples. n can be found by dividing the maximum multiple by the number it is a multiple of (eg. n for 3 will be 999/3 = 333 where 1000 is the limit).
 
+Timing Analysis:
+```
+real	0m0.019s
+user	0m0.016s
+sys	0m0.000s
+```
+
+Timing Analysis with limit set to 1,000,000:
+```
+real	0m0.019s
+user	0m0.016s
+sys	0m0.000s
+```
+
 The complexity of this algorithm is O(1).
 
 _Solution 3_:
 
 This solution checks each number below the limit for divisibility with 3 or 5 and adds those which are divisible to the final sum.
+
+Timing Analysis:
+```
+real	0m0.019s
+user	0m0.016s
+sys	0m0.000s
+```
+
+Timing Analysis with limit set to 1,000,000:
+```
+real	0m0.191s
+user	0m0.188s
+sys	0m0.000s
+```
+
+_Notes_:
+If timing analysis is done only on the limit of 1000, all three algorithms complete in approximately the same time. Increasing the limit, however, gives _solution 2_ a clear advantage over both _solution 1_ and _solution 3_. This is due to the fact that the complexity of _solution 2_ is constant-time.
 
 ---
 
